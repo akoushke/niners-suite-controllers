@@ -17,6 +17,7 @@
 @import 'bulma/sass/helpers/_all';
 @import 'bulma/sass/layout/_all';
 
+
 :root {
   --brand-title-size: calc(#{$title-size} * 2 + 0.35);
   --brand-subtitle-size: calc(#{$title-size} * 0.5 + 0.35);
@@ -34,6 +35,7 @@
 html,
 body {
   min-height: 100%;
+  @extend .is-translucent-black;
 }
 
 s #app {

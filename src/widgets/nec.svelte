@@ -2,13 +2,13 @@
   let mute = 'volume-off';
 </script>
 
-<article class="tile is-child notification is-info">
+<article class="tile is-child notification">
   <div class="buttons is-fullheight">
     <div class="tile is-fullheight is-ancestor">
       <div class="tile is-fullheight is-vertical is-12">
         <div class="tile is-parent is-justify-content-space-between">
           <button
-            class="button powerButton"
+            class="button {mute === 'volume-off' ? 'has-text-danger' : 'has-text-success'} powerButton"
             on:click={() => {
               mute = mute === 'volume-off' ? 'volume-high' : 'volume-off';
             }}
@@ -17,7 +17,7 @@
               <i class="mdi mdi-{mute} mdi-48px" />
             </span>
           </button>
-          <button class="button powerButton">
+          <button class="button is-danger powerButton">
             <span class="icon is-small">
               <i class="mdi mdi-power mdi-48px" />
             </span>
@@ -55,13 +55,15 @@
 </article>
 
 <style>
+  .notification {
+    background-color: #474a4d;
+  }
   .buttons {
     height: 100%;
   }
 
   .powerButton {
     border-radius: 50%;
-    background-color: #bfbb9a;
   }
 
   .volumeButton {

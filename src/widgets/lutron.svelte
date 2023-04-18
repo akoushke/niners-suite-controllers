@@ -2,7 +2,10 @@
   let powerButton = 'power';
 </script>
 
-<article class="tile is-child notification is-warning is-flex is-align-items-center is-justify-content-center">
+<article
+  class="tile is-child notification is-flex is-align-items-center is-justify-content-center"
+  style="background-color: #5e5e45b0"
+>
   <div class="buttons">
     <button class="button lutronButton">
       <span class="icon is-small">

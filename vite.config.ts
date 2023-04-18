@@ -4,6 +4,9 @@ import { resolve } from 'path';
 
 
 export default defineConfig({
+	optimizeDeps: {
+		include: ['lodash.get', 'lodash.isequal', 'lodash.clonedeep']
+	},
 	plugins: [sveltekit()],
 	envPrefix: 'PUBLIC',
 	resolve: {

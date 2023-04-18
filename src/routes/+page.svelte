@@ -5,7 +5,7 @@
 </script>
 
 <section>
-  <div class="main tile is-ancestor is-translucent-black p-4">
+  <div class="main tile is-ancestor p-4">
     <div class="tile is-vertical is-12">
       <div class="tile">
         <div class="tile is-parent is-vertical">
